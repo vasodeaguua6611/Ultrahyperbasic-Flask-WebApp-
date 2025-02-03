@@ -1,0 +1,33 @@
+<!DOCTYPE html> {% extends "base.html" %} {% block title %}Posts{% endblock %} {% block content %}
+<div class="main-container">
+    <div class="page-header">
+        <h1>Posts</h1>
+    </div>
+
+    {% with messages = get_flashed_messages(with_categories=true) %} {% if messages %} {% for category, message in messages %}
+    <div class="flash flash-{{ category }}">{{ message }}</div>
+    {% endfor %} {% endif %} {% endwith %}
+
+    <form method="POST" class="card">
+        <div class="form-group">
+            <label for="title">Title</label>
+            <input type="text" id="title" name="title" required>
+        </div>
+        <div class="form-group">
+            <label for="content">Content</label>
+            <textarea id="content" name="content" required rows="4"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Create Post</button>
+    </form>
+
+    <div class="grid">
+        {% for post in posts %}
+        <div class="card">
+            <h3>{{ post.title }}</h3>
+            <p>{{ post.content }}</p>
+            <small>By {{ post.author.username }} on {{ post.created_at.strftime('%Y-%m-%d') }}</small>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,25 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+}
+
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+}
+
+.quote-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.quote-text {
+    font-style: italic;
+    color: #495057;
+}
+
+.container {
+    padding-top: 2rem;
+}

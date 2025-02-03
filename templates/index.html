@@ -1,0 +1,19 @@
+<!DOCTYPE html> {% extends "layout.html" %} {% block body %}
+<div class="block1">
+    <h1>Welcome to the Ultrahyperbasic Flask Web App!</h1>
+    <h2>Here is an interesting quote for you:</h2>
+    <p>"pipis"</p>
+
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGD_cD7VqOYBnynP6p7VudMLZqy-rD4DotyA&s">
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/hello/YourName">Hello</a></li>
+            <li><a href="/members">Members</a></li>
+            <li><a href="{{ url_for('login') }}">Login</a></li>
+            <li><a href="{{ url_for('register') }}">Register</a></li>
+        </ul>
+    </nav>
+    <p>This is a simple Flask application to demonstrate the use of templates.</p>
+</div>
+{% endblock %}

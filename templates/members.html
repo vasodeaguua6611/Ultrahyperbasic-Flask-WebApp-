@@ -1,0 +1,12 @@
+<!DOCTYPE html> {% extends "base.html" %} {% block title %}Members{% endblock %} {% block content %}
+<h1>Members List</h1>
+<ul>
+    {% for member in members %}
+    <li>
+        <a href="{{ url_for('getMember', name=member.name) }}">
+            {{ member.name }} - {{ member.role }}
+        </a>
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}

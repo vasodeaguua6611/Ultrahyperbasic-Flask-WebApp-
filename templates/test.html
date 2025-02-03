@@ -1,0 +1,47 @@
+<!DOCTYPE html> {% extends "layout.html" %} {% block body %}
+<div class="block1">
+    <h1>Hello {{ name }}!</h1>
+    <h2>Here is an interesting quote for you:</h2>
+    <p>{{ quote }}</p>
+
+    <img src="http://www.naturalprogramming.com/images/smilingpython.gif">
+</div>
+{% endblock %} ``` Create a new file `test.html` with the following content: ```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello {{ name }}</title>
+    {% if style %}
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            text-align: center;
+            padding: 50px;
+        }
+        
+        .quote {
+            font-size: 1.5em;
+            margin: 20px 0;
+            color: #555;
+        }
+        
+        .name {
+            font-size: 2em;
+            font-weight: bold;
+            color: #007BFF;
+        }
+    </style>
+    {% endif %}
+</head>
+
+<body>
+    <div class="name">Hello, {{ name }}!</div>
+    <div class="quote">{{ quote }}</div>
+</body>
+
+</html>

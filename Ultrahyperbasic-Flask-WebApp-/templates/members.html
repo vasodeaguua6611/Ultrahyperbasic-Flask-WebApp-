@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+{% extends "layout.html" %} {% block body %}
+<div class="members-container">
+    <h1>Our Team Members</h1>
+    <div class="members-grid">
+        {% for member in members %}
+        <div class="member-card">
+            <h2>{{ member }}</h2>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

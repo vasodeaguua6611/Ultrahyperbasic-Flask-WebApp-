@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+{% extends "base.html" %} {% block title %}Hello {{ name }} - Flask WebApp{% endblock %} {% block content %}
+<div class="row">
+    <div class="col-md-8 offset-md-2">
+        <h2 class="mb-4">Hello, {{ name }}!</h2>
+        <div class="quote-card">
+            <p class="quote-text mb-0">{{ quote }}</p>
+        </div>
+        <a href="/" class="btn btn-outline-primary mt-3">Back to Home</a>
+    </div>
+</div>
+{% endblock %}
