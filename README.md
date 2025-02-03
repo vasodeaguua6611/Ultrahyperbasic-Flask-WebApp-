@@ -17,27 +17,26 @@ Welcome to my Ultrahyperbasic Python WebApp! This project (easily freaking longe
 
 ## Requirements
 
-Requirements
-Python 3+
-Flask 2.3.3
-Flask-SQLAlchemy 3.1.1
-Flask-Login 0.6.2
-Flask-Migrate 4.0.4
-Flask-WTF 1.1.1
-email-validator 2.0.0
-python-dotenv 1.0.0
-gunicorn 20.1.0
-pytest 6.2.5
-flask-cors 3.0.10
-flask-restful 0.3.9
-flask-jwt-extended 4.3.1
-requests 2.26.0
-pillow 8.3.2
-Flask-Limiter 3.5.0
-Flask-Caching 2.0.2
-bcrypt 4.0.1
-marshmallow 3.19.0
-Werkzeug 2.3.7
+- Python 3+
+- Flask 2.3.3
+- Flask-SQLAlchemy 3.1.1
+- Flask-Login 0.6.2
+- Flask-Migrate 4.0.4
+- Flask-WTF 1.1.1
+- email-validator 2.0.0
+- python-dotenv 1.0.0
+- gunicorn 20.1.0
+- pytest 6.2.5
+- flask-cors 3.0.10
+- flask-restful 0.3.9
+- flask-jwt-extended 4.3.1
+- requests 2.26.0
+- pillow 8.3.2
+- Flask-Limiter 3.5.0
+- Flask-Caching 2.0.2
+- bcrypt 4.0.1
+- marshmallow 3.19.0
+- Werkzeug 2.3.7
 
 ## Installation
 
